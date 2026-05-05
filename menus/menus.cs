@@ -28,10 +28,10 @@ namespace menuBasicoCsharp.menus
                 Console.WriteLine("└ 0 - SAIR.");
                 Console.WriteLine("\nUse Q & E para navegar ente as paginas\n");
                 Console.Write("Insira a opção que deseja: ");
-                opcao = Console.ReadLine().ToLower();
+                opcao = (Console.ReadLine() ?? "").ToLower();
 
                 switch (opcao)
-                {   
+                {
                     case "1":
                         funcoesMenu1.verificaOMaiorEntre2Numeros();
                         break;
@@ -83,51 +83,56 @@ namespace menuBasicoCsharp.menus
                 Console.Clear();
                 Console.WriteLine("+───2º Pagina───+\n");
                 Console.WriteLine("┌ 1 - Verificar se pode dirigir.");
-                Console.WriteLine("├ 2 - ");
-                Console.WriteLine("├ 3 - ");
-                Console.WriteLine("├ 4 - ");
-                Console.WriteLine("├ 5 - ");
-                Console.WriteLine("├ 6 - ");
-                Console.WriteLine("├ 7 - ");
-                Console.WriteLine("├ 8 - ");
-                Console.WriteLine("├ 9 - ");
+                Console.WriteLine("├ 2 - Verifica se é adulto, jovem ou menor de idade.");
+                Console.WriteLine("├ 3 - Verifica se um numero é multiplo de 2 ou 3.");
+                Console.WriteLine("├ 4 - Define a situação da temperatura.");
+                Console.WriteLine("├ 5 - Calculo de reajuste salarial.");
+                Console.WriteLine("├ 6 - Definir cateroria nadador.");
+                Console.WriteLine("├ 7 - Definir o maior numero entre 3 inseridos.");
+                Console.WriteLine("├ 8 - Calcular IMC.");
+                Console.WriteLine("├ 9 - Verificar triangulo.");
                 Console.WriteLine("├ Q - Página Anterior.");
+                Console.WriteLine("├ E - Proxima Página.");
                 Console.WriteLine("└ 0 - SAIR.");
                 Console.WriteLine("\nUse Q & E para navegar ente as paginas\n");
                 Console.Write("Insira a opção que deseja: ");
-                opcao = Console.ReadLine().ToLower();
+                opcao = (Console.ReadLine() ?? "").ToLower();
 
                 switch (opcao)
                 {
                     case "1":
-                    funcoesMenu2.verificarSePodeDirigir();
+                        funcoesMenu2.verificarSePodeDirigir();
                         break;
                     case "2":
-                        
+                        funcoesMenu2.definirSeAdultoJovemMenorDeIdade();
                         break;
                     case "3":
-                        
+                        funcoesMenu2.multiploDeDoisOuTres();
                         break;
                     case "4":
-                        
+                        funcoesMenu2.definirTemperatura();
                         break;
                     case "5":
-                        
+                        funcoesMenu2.gerarAumento();
                         break;
                     case "6":
-                        
+                        funcoesMenu2.idadeNadador();
                         break;
                     case "7":
-                        
+                        funcoesMenu2.maiorDeTres();
                         break;
                     case "8":
-                        
+                        funcoesMenu2.calcularIMC();
                         break;
                     case "9":
-                        
+                        funcoesMenu2.verificarTriangulo();
                         break;
                     case "q":
                         criarMenu1();
+                        sistema = false;
+                        break;
+                    case "e":
+                        // criarMenu3();
                         sistema = false;
                         break;
                     case "0":
