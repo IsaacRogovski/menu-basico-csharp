@@ -296,21 +296,7 @@ namespace menuBasicoCsharp.funcoes
             }
 
             imc = peso / (altura * altura);
-            // if (imc < 20)
-            // {
-            //     Console.WriteLine($"IMC: {imc}\nCategoria: Abaixo do peso");
-            // }
-            // else if (imc >= 20 && imc < 25)
-            // {
-            //     Console.WriteLine($"IMC: {imc}\nCategoria: Peso ideal");
-            // }
-            // else
-            // {
-            //     Console.WriteLine($"IMC: {imc}\nCategoria: Acima do peso");
-            // }
-
-            // ---------------- abaixo um codigo para o calculo do imc com base na tabela real...
-
+            
             double[] classificacao = { 18.5, 24.9, 29.9, 34.9, 39.9 };
             string[] categorias = { "Abaixo do peso", "Peso normal", "Sobrepeso", "Obesidade I", "Obesidade II" };
 
