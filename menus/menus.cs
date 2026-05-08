@@ -146,7 +146,7 @@ namespace menuBasicoCsharp.menus
 
         public static void criarMenu3()
         {
-            // FuncoesMenu3 funcoesMenu3 = new FuncoesMenu3();
+            FuncoesMenu3 funcoesMenu3 = new FuncoesMenu3();
             bool sistema = true;
             string? opcao;
 
@@ -154,7 +154,7 @@ namespace menuBasicoCsharp.menus
             {
                 Console.Clear();
                 Console.WriteLine("+───3º Pagina───+\n");
-                Console.WriteLine("┌ 1 - .");
+                Console.WriteLine("┌ 1 - Definir se aluno esta aprovado ou não.");
                 Console.WriteLine("├ 2 - .");
                 Console.WriteLine("├ 3 - .");
                 Console.WriteLine("├ 4 - .");
@@ -173,31 +173,31 @@ namespace menuBasicoCsharp.menus
                 switch (opcao)
                 {
                     case "1":
-                        
+                        funcoesMenu3.mediaNota();
                         break;
                     case "2":
-                       
+
                         break;
                     case "3":
-                       
+
                         break;
                     case "4":
-                        
+
                         break;
                     case "5":
-                        
+
                         break;
                     case "6":
-                        
+
                         break;
                     case "7":
-                        
+
                         break;
                     case "8":
-                        
+
                         break;
                     case "9":
-                        
+
                         break;
                     case "q":
                         criarMenu2();

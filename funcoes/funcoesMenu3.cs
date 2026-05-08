@@ -1,10 +1,10 @@
 using System;
 
-namespace aula_06_04
+namespace menuBasicoCsharp.funcoes
 {
-    class exercicio10
+    public class FuncoesMenu3
     {
-        public static void mediaNota()
+        public void mediaNota()
         {
             Console.Clear();
             int[] notas = new int[2];
@@ -31,6 +31,7 @@ namespace aula_06_04
             {
                 Console.WriteLine($"Media: {media}, Reprovado!");
             }
+            Console.ReadKey();
         }
     }
 }
